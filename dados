@@ -1,0 +1,193 @@
+#_______________________________________________________________________INICIO DEL BOT
+import os
+from discord import message
+from discord.ext import commands
+from dotenv import load_dotenv
+import urllib.request
+import json
+DISCORD_TOKEN = 'ODk5ODAyNzAzMzY1MDIxNzY2.YW4Ekg.AdNnNYVrnzmixFPiO2Ez8SBou-A'
+#esto es del servidor del discord con el token
+
+#_______________________________________________________________________PREFIJO
+bot = commands.Bot(command_prefix='!')
+
+
+   
+
+#es del bot de dados
+#__________________________________________________________________________
+
+#______________________________________________________________________IMPORTAR RANDON
+
+import random
+list (range(0,6))
+for i in range (1):
+#______________________________________________________________________
+
+#_____________________________________________________________________IMAGENES
+    banner_dados = 'https://cdn.discordapp.com/attachments/899324199414427698/902194595092385843/d6c.png'
+    imagen1 = 'https://cdn.discordapp.com/attachments/899324199414427698/902200222913032262/dado1.png'
+    imagen2 = 'https://cdn.discordapp.com/attachments/899324199414427698/902200224829833236/dado2.png'
+    imagen3 = 'https://cdn.discordapp.com/attachments/899324199414427698/902200227426103386/dado3.png'
+    imagen4 = 'https://cdn.discordapp.com/attachments/899324199414427698/902200229619703818/dado4.png'
+    imagen5 = 'https://cdn.discordapp.com/attachments/899324199414427698/902200231695888404/dado5.png'
+    imagen6 = 'https://cdn.discordapp.com/attachments/899324199414427698/902200233352654859/dado6.png'
+    imagenes = ([imagen1, imagen2, imagen3, imagen4, imagen5, imagen6])
+
+#__________________________________________________________________________EXP DE BOT DISCORD
+    
+    
+ #es del bot de dados de 6 caras (1 lanzada)
+#__________________________________________________________________________
+    @bot.command(name='1d6')
+    async def roll(ctx):
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       await ctx.send('la tirada salio')
+       await ctx.send(operador1)
+
+
+
+ #es del bot de dados de 6 caras (2 lanzadas)
+#__________________________________________________________________________
+    @bot.command(name='2d6')
+    async def roll(ctx):
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       d26 =(operador1)and(operador1)
+       await ctx.send(banner_dados) 
+       await ctx.send('la tirada salio')
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+
+ #es del bot de dados de 6 caras (3 lanzadas)
+#__________________________________________________________________________
+    @bot.command(name='3d6')
+    async def roll(ctx):
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       d26 =(operador1)and(operador1)
+       await ctx.send(banner_dados) 
+       await ctx.send('la tirada salio')
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       #es del bot de dados de 6 caras (4 lanzadas)
+#__________________________________________________________________________
+
+    @bot.command(name='4d6')
+    async def roll(ctx):
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       d26 =(operador1)and(operador1)
+       await ctx.send(banner_dados) 
+       await ctx.send('la tirada salio')
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+
+       #es del bot de dados de 6 caras (5 lanzadas)
+#__________________________________________________________________________
+    @bot.command(name='5d6')
+    async def roll(ctx):
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       d26 =(operador1)and(operador1)
+       await ctx.send(banner_dados) 
+       await ctx.send('la tirada salio')
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       #es del bot de dados de 6 caras (6 lanzadas)
+#__________________________________________________________________________
+    @bot.command(name='6d6')
+    async def roll(ctx):
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       d26 =(operador1)and(operador1)
+       await ctx.send(banner_dados) 
+       await ctx.send('la tirada salio')
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       #es del bot de dados de 6 caras (7 lanzadas)
+#__________________________________________________________________________
+    @bot.command(name='7d6')
+    async def roll(ctx):
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       d26 =(operador1)and(operador1)
+       await ctx.send(banner_dados) 
+       await ctx.send('la tirada salio')
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       #es del bot de dados de 6 caras (8 lanzadas)
+#__________________________________________________________________________
+
+    @bot.command(name='8d6')
+    async def roll(ctx):
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       d26 =(operador1)and(operador1)
+       await ctx.send(banner_dados) 
+       await ctx.send('la tirada salio')
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       #es del bot de dados de 6 caras (9 lanzadas)
+#__________________________________________________________________________
+
+    @bot.command(name='9d6')
+    async def roll(ctx, num1):
+       operador1 = random.choice ([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])+int(num1)
+       d26 =(operador1)and(operador1)
+       await ctx.send(banner_dados) 
+       await ctx.send('la tirada salio')
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       await ctx.send(operador1)
+       #es del bot de dados de 6 caras (10 lanzadas)
+#__________________________________________________________________________
+
+    @bot.command(name='10d6')
+    async def roll(ctx):
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       await ctx.send(banner_dados) 
+       await ctx.send('la tirada salio')
+       await ctx.send(operador1)
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       await ctx.send(operador1)
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       await ctx.send(operador1)
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       await ctx.send(operador1)
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       await ctx.send(operador1)
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       await ctx.send(operador1)
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       await ctx.send(operador1)
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       await ctx.send(operador1)
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       await ctx.send(operador1)
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+       await ctx.send(operador1)
+       operador1 = random.choice([imagen1 ,imagen2 ,imagen3,imagen4, imagen5,imagen6])
+
+#__________________________________________________________________________ENCENDIDO
+bot.run(DISCORD_TOKEN) 
